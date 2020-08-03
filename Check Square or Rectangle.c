@@ -17,12 +17,12 @@ int main()
    int D_xz = find_dist_between_two_points(x,x1,z,z1);
    int D_xa = find_dist_between_two_points(x,x1,a,a1);
     
-   if( (D_xy == D_xz && 2*D_xy == D_xa ) || ( D_xz == D_xa && 2*D_xz == D_xy )|| ( D_xy == D_xa && 2*D_xy == D_xz ))
+   if((D_xy == D_xz && 2*D_xy == D_xa ) || ( D_xz == D_xa && 2*D_xz == D_xy )|| ( D_xy == D_xa && 2*D_xy == D_xz ))
    {
        printf( "square" );
    }
    else 
    {
-      printf("rectangle");
+      printf( "rectangle" );
    }
 }
